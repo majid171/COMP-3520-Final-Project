@@ -1,18 +1,16 @@
-﻿# <center>60-352 Project (Submission 1/2)</center>
+﻿# <center>60-352 Project (Submission 1/3)</center>
 <center>By: Majid Joseph, Mostapha Rammo, Steven Bodnar, Abdul Abu Libda</center>
 
 ## Overview
 
 NOTE: See Submission 2 [here.](https://github.com/rammom/COMP3520-FinalProject)
+NOTE: See Submission 3 [here.](https://github.com/rammom/raycast)
 
 The COMP-3520 Final Project outlined within is comprised of three components; 
 
  - A 3D OpenGL representation backed by C++ alongside the GLFW, GLM, and assimp libraries. 
  - An SDL2 representation of commonly used primitives in computer graphics.
  - An implementation of a Bezier surface produced using Java's Processing library in conjunction with OpenGL.
-
-This document will cover 
-
 
 
 
@@ -58,7 +56,7 @@ The program will choose a number of random control points with each run. Once th
  - Directional Light
 
 #### Setup
-Install the processing IDE here. Once installed then open the bezier.pde file in the processing window. Press play to see the project.
+Install the processing IDE [here.](https://processing.org/download/) Once installed then open the bezier.pde file in the processing window. Press play to see the project.
 
 ![](beziergif.gif)
 

@@ -37,30 +37,22 @@ void setupSurface() {
   fillSurface();
 }
 
-// boilerplate
 void draw() {
   // lights!
   background(100,100,100);
   directionalLight(0, 0, 255, -1, 1, 1);
   directionalLight(100, 120, 40, 1, -1, -1);
 
-  // camera!
   camera(target_x + camera_x, target_y + camera_y, camera_z,  // camera coordinate
          target_x, target_y, 0,                               // target coordinate
          0.0, 0.0, 1.0);                                      // zenith direction
   
-  // action!
   stroke(0,0,150);
   drawSurfaceShape(surface);
-
   stroke(255);
   drawSurface(controls);
 }
 
-
-/**
- * draw surface as mesh
- */
 void drawSurface(Point[][] points) {
   int N = points.length, M = points[0].length;
   for(int i=0; i<N; i++) {
@@ -89,7 +81,7 @@ void drawSurface(Point[][] points) {
  * Draw surface as quads
  */
 void drawSurfaceShape(Point[][] points) {
-  //noStroke();
+  noStroke();
   int N = points.length, M = points[0].length;
   for(int i=0; i<N; i++) {
     for(int j=0; j<M; j++) {
@@ -99,8 +91,6 @@ void drawSurfaceShape(Point[][] points) {
         Point p3 = points[i+1][j+1];
         Point p4 = points[i][j+1];
         
-        //noFill();
-        stroke(255, 0, 0);
         beginShape(QUADS);
         vertex(p1.x, p1.y, p1.z);
         vertex(p2.x, p2.y, p2.z);
@@ -122,9 +112,6 @@ void mouseMoved() {
   camera_z = (height/2 - mouseY)/2;
   redraw();
 }
-
-
-// ==== SUPPORT FUNCTIONS ====
 
 
 float mui, muj, bi, bj, bv;
