@@ -6,11 +6,12 @@
 NOTE: See Submission 2 [here.](https://github.com/rammom/COMP3520-FinalProject)
 NOTE: See Submission 3 [here.](https://github.com/rammom/raycast)
 
-The COMP-3520 Final Project outlined within is comprised of three components; 
+The COMP-3520 Final Project outlined within is comprised of four components; 
 
  - A 3D OpenGL representation backed by C++ alongside the GLFW, GLM, and assimp libraries. 
  - An SDL2 representation of commonly used primitives in computer graphics.
  - An implementation of a Bezier surface produced using Java's Processing library in conjunction with OpenGL.
+ - An SDL2 representation of some ray-casting.
 
 
 
